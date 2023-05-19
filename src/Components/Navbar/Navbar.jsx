@@ -13,7 +13,7 @@ const Menu = () => {
   <p><a href="#features">Case Studies</a></p>
   <p><a href="#blog">Library</a></p>
   </>
-)}
+)}  
 
 // BEM -> BLOCK ELEMENT MODIFIER
 
@@ -29,12 +29,13 @@ const Navbar = () => {
     <Menu/>
     </div>
     </div>
+
     <div className='gpt3__navbar-sign'>
     <p>Sign in</p>
     <button type ="button">Sign Up</button>
     </div>
+
     <div className='gpt3__navbar-menu'>
-    
     {toggleMenu ? <RiCloseLine color='#fff' size={27} onClick={() => setToggleMenu(false)} />
   : <RiMenu3Line color='#fff' size={27} onClick={() => setToggleMenu(true)} />
 }
@@ -42,13 +43,16 @@ const Navbar = () => {
 {
   toggleMenu && (
     <div className='gpt3__navbar-menu_container scale-up-center'>
+    
     <div className='gpt3__navbar-menu_container-links'>
     <Menu/>
+   
     <div className='gpt3__navbar-menu_container-links-sign'>
     <p>Sign in</p>
     <button type ="button">Sign Up</button>
     </div>
     </div>
+
     </div>
   )
 }
