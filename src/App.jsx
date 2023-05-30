@@ -1,6 +1,6 @@
 import './App.css'
 import { Footer , Features, Blog, Header, Possibility, WhatGPT3} from './Containers';
-import {Navbar, Brand, Cta } from './Components/index'
+import {Navbar, Brand, Cta } from './Components'
 
 const App = () => {
   return (
