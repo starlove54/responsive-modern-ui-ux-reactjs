@@ -1,4 +1,4 @@
-import './cta.css';
+import './Cta.css';
 
 const Cta = () => (
   <div className="gpt3__cta">
